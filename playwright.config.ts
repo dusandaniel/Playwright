@@ -62,7 +62,7 @@ export default defineConfig({
     {name: "setup", testMatch: /.*\.setup\.ts/, fullyParallel: false},
     {
       name: 'chromium',
-     // dependencies: ["setup"],
+      dependencies: ["setup"],
       use: { ...devices['Desktop Chrome'] },
     },
 
